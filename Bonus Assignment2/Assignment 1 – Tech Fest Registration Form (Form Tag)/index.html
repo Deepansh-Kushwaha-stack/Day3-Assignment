@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Fest Registration</title>
+</head>
+<body>
+
+  <h1>College Tech Fest - Registration Form</h1>
+
+  <form action="/submit" method="post">
+    
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="college">College Name:</label><br>
+    <input type="text" id="college" name="college" required><br><br>
+
+    <label for="year">Year of Study:</label><br>
+    <select id="year" name="year">
+      <option value="1st">1st Year</option>
+      <option value="2nd">2nd Year</option>
+      <option value="3rd">3rd Year</option>
+      <option value="4th">4th Year</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>Gender:</legend>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Events You Want to Participate In:</legend>
+      <input type="checkbox" id="coding" name="events" value="Coding">
+      <label for="coding">Coding Challenge</label><br>
+      <input type="checkbox" id="robotics" name="events" value="Robotics">
+      <label for="robotics">Robotics</label><br>
+      <input type="checkbox" id="quiz" name="events" value="Quiz">
+      <label for="quiz">Tech Quiz</label><br>
+      <input type="checkbox" id="design" name="events" value="Design">
+      <label for="design">UI/UX Design</label>
+    </fieldset><br>
+
+    <label for="message">Why are you excited for this fest?</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Your thoughts..."></textarea><br><br>
+
+    <button type="submit">Submit Registration</button>
+  </form>
+
+</body>
+</html>
